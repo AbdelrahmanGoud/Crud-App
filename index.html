@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+          <div class="capction text-center py-4">
+                    <h1 class="text-primary">Our Products</h1>          
+                    </div>
+          <div class="container m-auto">
+          <div class="form-group pt-3">
+                <input type="text" name="pname" id="Iname" placeholder="Product Name" class="form-control w-100 m-auto">  
+                <div id="alrt" class="text-center"></div>
+          </div>  
+          
+          <div class="form-group pt-3">
+                    <input type="text" name="pcate" id="Icate" placeholder="Product Category" class="form-control w-100 m-auto">   
+              </div>   
+              <div class="form-group pt-3">
+                    <input type="number" name="num" id="Inum" placeholder="Product Price" class="form-control w-100 m-auto">   
+              </div>   
+
+              <div class="form-group pt-3">
+                    <textarea class="form-control w-100 m-auto" placeholder="Description" id="Idesc"></textarea> 
+                    
+              </div>   
+              <div class="form-group pt-3">
+                    <input type="text" name="num" id="Isear" onkeyup="searchproduct(this.value)" placeholder="Search Product" class="form-control w-75 m-auto">   
+              </div> 
+
+              <div class="form-group pt-3 text-center ">
+                    <button class="btn btn-primary  m-auto px-5" id="botset">Add Product</button>
+                    <button class="btn btn-success  m-auto d-none px-5"  id="bot2set">Update Product</button>
+                    
+              </div>  
+          </div>
+          
+
+          <table class="table my-5 container">
+                    <thead class="text-primary">
+                    <th>Index</th>
+                    <th>Name</th> 
+                    <th>Category</th> 
+                    <th>Price</th> 
+                    <th>Description</th>
+                    <th>Delete</th>
+                    <th>Update</th>           
+                    </thead>
+                    <tbody id="tbody">
+                           
+                    </tbody>       
+                 </table>
+          
+
+
+
+
+
+          <script src="js/jquery-3.5.1.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          <script src="js/main.js"></script>
+</body>
+</html>
